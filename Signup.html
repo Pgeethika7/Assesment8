@@ -1,0 +1,131 @@
+<html>
+<head>
+  <title>Sign Up</title>
+  <style>
+    .login-container {
+      width: 400px;
+      margin: 100px auto;
+      background: #fff;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    input{
+        border-color:black;
+        outline:none;
+       }
+    input:focus{
+              border-color:red;
+               
+      }
+    .input-group {
+      margin-bottom: 20px;
+    }
+     .input-group label {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 5px;
+      color: #333;
+    }
+    
+    .input-group input {
+      width: 95%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: none;
+      background: #333;
+      color: #fff;
+      cursor: pointer;
+    }
+    
+    .btn:hover {
+      background: #555;
+    }
+    .warning {
+  background-color: #ffffcc;
+  border-left: 6px solid #ffeb3b;
+}
+    .warning1 {
+  background-color: #ffdddd;
+  border-left: 6px solid #f44336;
+}
+</style>
+</head>
+<body>
+ <form>
+  <div class="login-container">
+    <h2>Sign Up</h2>
+    <div class="input-group">
+      <label class="required" for="fname">Name:</label>
+      <input type="text" id="fname" placeholder="Full name" required/>
+    </div>
+    <div class="input-group">
+      <label class="required" for="ename">email:</label>
+      <input type="mail" id="ename" placeholder="gmail Id" required/>
+    </div>
+    <div class="input-group">
+      <label class="required" for="pname">Password:</label>
+      <input type="password" id="pname" placeholder="8 Characters" required/>
+    </div>
+    <div class="input-group">
+      <label class="required" for="cname">Confirm Password:</label>
+      <input type="password" id="cname" placeholder="8 Characters" required/>
+    </div>
+    <div class="input-group">
+      <label class="required" for="dname">Date Of Birth:</label>
+      <input type="date" id="dname" required/>
+    </div>
+    <div>
+      <p style="font-size:20">Gender:</p>
+      <input type="radio" id="maname" name="na1">
+      <label class="required" for="maname" style="font-size:18">Male</label>
+      <input type="radio" id="faname" name="na1">
+      <label class="required" for="faname" style="font-size:18">Female</label>
+      <input type="radio" id="oaname" name="na1">
+      <label class="required" for="oaname" style="font-size:18">Other</label>
+    </div><br>
+    <div class="input-group">
+      <label class="required" for="phname">Insert your photo:</label>
+      <input type="file" id="phname" accept=".jpg/,.png/,.jpeg/" required/>
+    </div>
+    <div class="input-group">
+      <label class="required" for="rhname">Insert your resume:</label>
+      <input type="file" id="rhname" accept=".pdf" required/>
+    </div>
+    <div class="input-group">
+      <label class="required" for="sname">Security Question:</label>
+      <input list="security" name="security" placeholder="Select" required/>
+      <datalist id="security">
+        <option value="What is your first school name?">
+        <option value="What is your pet name?">
+        <option value="What is your favourite colour?">
+        <option value="What is your nickname?">
+        <option value="What is your native place?">
+        <option value="What is your favourite holiday spot?">
+      </datalist>
+      <textarea rows="10" cols="49"></textarea>
+    </div>
+    <div>
+       <input type="checkbox" id="chname" required/>I agree terms and conditions
+    </div><br>
+    <div>
+       <button>Register</button>
+    </div>
+
+  </form>
+</body>
+</html>
